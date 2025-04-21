@@ -23,7 +23,7 @@ Printer printer = new();
 generator_1.EventHandler += printer.Print;
 generator_1.GenerateEvent();
 generator_2.EventHandler += printer.Print;
-generator_1.GenerateEvent();
+generator_2.GenerateEvent();
 
 class EventsGeneratorNamed
 {
@@ -45,4 +45,4 @@ class Printer
     public void Print(string str) => Console.WriteLine(str);
 }
 
-delegate void Event(string str);
+    delegate void Event(string str);
